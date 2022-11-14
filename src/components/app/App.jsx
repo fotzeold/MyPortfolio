@@ -1,0 +1,42 @@
+import { useState } from 'react'
+import Header from "../header/Header";
+import Main from '../main/Main';
+import Contacts from '../contacts/Contacts';
+import './app.scss';
+
+function App() {
+	const [visibleComponent, setVisible] = useState('main');
+
+	const onVisible = (component) => {
+		setVisible(component);
+	}
+
+	const onRender = (param) => {
+		switch (param) {
+			case 'main':
+				return (<Main />)
+				break;
+			case 'about':
+				return (<h1>about</h1>)
+				break;
+			case 'project':
+				return (<h1>project</h1>)
+				break;
+			case 'contacts':
+				return (<Contacts />)
+				break;
+		}
+	}
+
+	return (
+		<div className="container">
+			<Header
+				onVisible={onVisible}
+				visibleComponent={visibleComponent}>
+			</Header>
+			{onRender(visibleComponent)}
+		</div>
+	)
+}
+
+export default App;

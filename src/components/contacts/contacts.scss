@@ -1,0 +1,31 @@
+address{
+	background: url('../../img/icon/strelka.svg') 30% 40% no-repeat;
+	font-family: 'Montserrat', sans-serif;
+	h2{
+		font-size: 50px;
+		margin: 0;
+		font-weight: 400;
+		line-height: 135px;
+	}
+	.contacts{
+		width: 40%;
+		margin: 80px 0 0 auto
+	}
+	a{
+		position: relative;
+		display: block;
+		text-decoration: none;
+		margin: 15px 0 15px 0;
+	}
+	img{
+		position: absolute;
+		width: 40px;
+		top: -4px;
+	}
+	span{
+		color: #000;
+		font-size: 28px;
+		line-height: 35px;
+		padding-left: 70px;
+	}
+}

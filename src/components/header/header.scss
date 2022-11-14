@@ -1,0 +1,36 @@
+header {
+	width: 100%;
+	img{
+		width: 246px;
+		height: 55px;
+	}
+	.row{
+		display: flex;
+		padding-top: 15px;
+		justify-content: space-between;
+	}
+	ul{
+		display: flex;
+		li{
+			list-style: none;
+			margin-right: 50px;
+			font-weight: 441;
+			font-size: 20px;
+			line-height: 27px;
+			color: #797979;
+			&:last-child{
+				margin-right: 0px;
+			}
+			&:hover{
+				cursor: pointer;
+				color: #313030;
+			}
+		}
+		.active{
+			color:black;
+			font-weight: 500;
+		}
+	}
+
+	
+}
