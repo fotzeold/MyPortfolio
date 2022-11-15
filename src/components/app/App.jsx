@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from "../header/Header";
 import Main from '../main/Main';
+import MyProject from '../myProject/MyProject';
 import Contacts from '../contacts/Contacts';
 import './app.scss';
 
@@ -20,7 +21,7 @@ function App() {
 				return (<h1>about</h1>)
 				break;
 			case 'project':
-				return (<h1>project</h1>)
+				return (<MyProject />)
 				break;
 			case 'contacts':
 				return (<Contacts />)
