@@ -42,14 +42,14 @@ const Content = (props) => {
 	if (props.reposes[0]) {
 		const data = props.reposes
 		return (
-			<section>
+			<section className="Section-Project">
 				<div className="last_project">
 					<h2>Останній проект:</h2>
 					<div className="row">
 						<div className="last_project-info project-info">
 							<h3>{data[0].name}</h3>
 							<p>{data[0].description}</p>
-							<a href="" className="last_project-github github">
+							<a target="_blank" href={data[0].url} className="last_project-github github">
 								<span>Перейти на GitHub</span>
 								<img src={arrow} alt="" />
 							</a>
@@ -70,7 +70,7 @@ const Content = (props) => {
 									<div className="all_project-info project-info">
 										<h3>{elem.name}</h3>
 										<p>{elem.description}</p>
-										<a href="" className="all_project-github github">
+										<a target="_blank" href={elem.url} className="all_project-github github">
 											<span>Перейти на GitHub</span>
 											<img src={arrow} alt="" />
 										</a>

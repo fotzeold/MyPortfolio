@@ -1,0 +1,122 @@
+.Info-About-Owner {
+	padding: 40px 150px 0 150px;
+	font-family: 'Montserrat', sans-serif;
+	.row {
+		display: flex;
+	}
+	.main{
+		height: 205px;
+		background-color: rgb(55, 60, 84);
+		color: rgb(239, 238, 238);
+		h2{
+			font-size: 40px;
+			line-height: 35px;
+		}
+		
+		img{
+			width: 205px;
+			height: 205px;
+		}
+		.main_info {
+			margin-left: 50px;
+			h2{
+				color: rgb(239, 238, 238);
+			}
+		}
+	}
+	h2{
+		color: rgb(68, 74, 101);
+	}
+	h3{
+		line-height: 0;
+	}
+
+	.content{
+		padding: 50px 0 0 0;
+	}
+
+	.content_left{
+		position: relative;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 65%;
+
+		.description{
+			width: 65%;
+		}
+		
+		p{
+			color: rgb(93, 93, 93);
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 20px;
+			right: 0;
+			display: block;
+			height: 96%;
+			width: 1px;
+			background-color: #000;
+		}
+
+		.content-card{
+			.row {
+				justify-content: space-between;
+			}
+			padding-bottom: 50px;
+
+			ul{
+				padding: 0 0 0 18px;
+			}
+			a{
+				text-decoration: none;
+			}
+			li{
+				margin-bottom: 10px;
+			}
+		}
+
+		.content-card:last-child::after{
+			display: none;
+		}
+
+		.date{
+			padding-top: 7px;
+			font-size: 18px;
+			padding-left: 20px;
+		}		
+	}
+
+	.content_right {
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 35%;
+
+		h2{
+			padding-bottom: 20px;
+		}
+		p{
+			line-height: 25px;
+			padding-bottom: 10px;
+		}
+		.content-card::after{
+			width: 100%;
+		}
+
+		.content_right:nth-child(2) {
+			p{
+				color: #000;
+				font-size: 28px;
+			}
+		}
+	}
+	.content-card::after{
+		content: '';
+		display: flex;
+		margin-top: 25px;
+		width: 100%;
+		height: 1px;
+		background-color: #000;
+	}
+}
