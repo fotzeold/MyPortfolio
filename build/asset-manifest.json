@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.42957abe.css",
+    "main.js": "/static/js/main.ff3d45c7.js",
+    "static/media/Vector.svg": "/static/media/Vector.d089cebc8548fde9c015.svg",
+    "static/media/mainPhotoSliced.jpg": "/static/media/mainPhotoSliced.bf5f3a2d06a4d2ca207d.jpg",
+    "static/media/557269653.jpg": "/static/media/557269653.05e29800db4fc8d3b5d4.jpg",
+    "static/media/IMG.JPG": "/static/media/IMG.cefecec57d69aa55b83a.JPG",
+    "static/media/547865432.jpg": "/static/media/547865432.b2f19eb24339b8bd0cc8.jpg",
+    "static/media/540823387.jpg": "/static/media/540823387.bc1745f6f62caf870677.jpg",
+    "static/media/550109879.jpg": "/static/media/550109879.7524e2af6e10aa784483.jpg",
+    "static/media/565761082.jpg": "/static/media/565761082.964294b215040384bfd2.jpg",
+    "static/media/319289141.jpg": "/static/media/319289141.52c9c75bf3eebfac1fd2.jpg",
+    "static/media/instagram-svgrepo-com.svg": "/static/media/instagram-svgrepo-com.62572c862d53f228aa8eff879e2e1d37.svg",
+    "static/media/github-svgrepo-com.svg": "/static/media/github-svgrepo-com.8069ca5c1f02280c233b8b89e5a9e114.svg",
+    "static/media/phone-call-svgrepo-com.svg": "/static/media/phone-call-svgrepo-com.c84c33fd4480799f67763c67df4fdba1.svg",
+    "static/media/facebook-svgrepo-com.svg": "/static/media/facebook-svgrepo-com.719f3a8cc30a5a6a314d29b6b91fb7bb.svg",
+    "index.html": "/index.html",
+    "static/media/linkedin-svgrepo-com.svg": "/static/media/linkedin-svgrepo-com.60fb0d232fa41b95872ee2d57ba1c7de.svg",
+    "static/media/strelka.svg": "/static/media/strelka.2580674be8d4ecd14881.svg",
+    "static/media/Arrow.svg": "/static/media/Arrow.4518b0a5680299ca226ff84375f31848.svg",
+    "static/media/telegram-svgrepo-com.svg": "/static/media/telegram-svgrepo-com.da27cc0037e7ae9c6dfe0dd57a4526c5.svg",
+    "main.42957abe.css.map": "/static/css/main.42957abe.css.map",
+    "main.ff3d45c7.js.map": "/static/js/main.ff3d45c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42957abe.css",
+    "static/js/main.ff3d45c7.js"
+  ]
+}
