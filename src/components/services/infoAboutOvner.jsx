@@ -102,8 +102,8 @@ export const owner = {
 			label: 'Skills',
 			info: [
 				{
-					name: null,
-					description: 'HTML5, CSS (SASS/SCSS), JS, GIT, Gulp, React, fetch API, Figma, Photoshop, npm, Basic of Redux'
+					name: 'HTML5, CSS (SASS/SCSS), JS, GIT, Gulp, React, fetch API, Figma, Photoshop, npm, Basic of Redux',
+					description: null
 				}
 			]
 

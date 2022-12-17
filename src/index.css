@@ -1,5 +1,6 @@
 body {
-	box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: visible;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -8,13 +9,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.overflow-hidden{
+	overflow: hidden;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.wrapper{
-	height: calc(100vh - 74px);
 }
 
 

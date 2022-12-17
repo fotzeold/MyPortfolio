@@ -1,42 +1,27 @@
-import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Header from "../header/Header";
-import Main from '../main/Main';
-import About from '../about/About';
-import MyProject from '../myProject/MyProject';
-import Contacts from '../contacts/Contacts';
+import MainPage from "../main/MainPage";
+import About from "../about/About";
+import MyProjects from "../myProjects/MyProjects";
+import Contact from "../contact/Contact";
+
 import './app.scss';
 
 function App() {
-	const [visibleComponent, setVisible] = useState('main');
-
-	const onVisible = (component) => {
-		setVisible(component);
-	}
-
-	const onRender = (param) => {
-		switch (param) {
-			case 'main':
-				return (<Main />)
-				break;
-			case 'about':
-				return (<About />)
-				break;
-			case 'project':
-				return (<MyProject />)
-				break;
-			case 'contacts':
-				return (<Contacts />)
-				break;
-		}
-	}
 
 	return (
 		<div className="container">
-			<Header
-				onVisible={onVisible}
-				visibleComponent={visibleComponent}>
-			</Header>
-			{onRender(visibleComponent)}
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<Header />}>
+						<Route index element={<MainPage />} />
+						<Route path="about" element={<About />} />
+						<Route path="my-projects" element={<MyProjects />} />
+						<Route path="contact" element={<Contact />} />
+					</Route>
+				</Routes>
+			</BrowserRouter>
 		</div>
 	)
 }

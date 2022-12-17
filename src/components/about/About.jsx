@@ -1,94 +1,71 @@
-import { owner } from '../../services/infoAboutOvner';
-import avatar from '../../img/image/about/IMG.JPG'
+import SocialIcons from '../services/SocialIcons';
+import Spinner from '../spinner/Spinner';
 
 import './about.scss';
 
 const About = () => {
+	const { facebook, telegram, instagram, github, linkedin, viber } = SocialIcons;
 
 	return (
-		<section className='Info-About-Owner'>
-			<div className="main">
-				<div className="row">
-					<div className="main_image">
-						<img src={avatar} alt="Roman-Popovych-Avatar" />
+		<section className='about'>
+			<div className="about__row">
+				<div className="about__main">
+					<div className="about__main-info">
+						<p> <span>Name:</span> Roman Popovych</p>
+						<p> <span>Age:</span> 23 years</p>
+						<p> <span>Address:</span> Kyiv, Fedory Pushynoi 8</p>
+						<p> <span>Phone:</span> +38 093 4638 024</p>
+						<p> <span>Email:</span> popovychjob@gmail.com</p>
+						<figure className='social-media'>
+							<a target="_blank" href=""><img src={facebook} alt="" /></a>
+							<a target="_blank" href=""><img src={telegram} alt="" /></a>
+							<a target="_blank" href=""><img src={instagram} alt="" /></a>
+							<a target="_blank" href=""><img src={github} alt="" /></a>
+							<a target="_blank" href=""><img src={linkedin} alt="" /></a>
+							<a target="_blank" href=""><img src={viber} alt="" /></a>
+						</figure>
 					</div>
-					<div className="main_info">
-						<h2>Roman Popovych</h2>
-						<h3>Frontend Engineer</h3>
-						<span>Every day I am closer to my dream</span>
+					<div className="about__steck">
+						<div className="d-flex">
+							<div className="steck-label">
+								<h5>HTML</h5>
+								<h5>CSS</h5>
+								<h5>JS</h5>
+								<h5>REACT</h5>
+								<h5>REDUX</h5>
+								<h5>GIT</h5>
+							</div>
+							<div className="steck-progress">
+								<div className="progress" style={{ "height": "20px", "width": "100%", "margin": "3px 0 12px 0" }}>
+									<div className="progress-bar" role="progressbar" aria-label="Example 20px high" style={{ "width": "95%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div className="progress" style={{ "height": "20px", "width": "100%", "margin": "3px 0 12px 0" }}>
+									<div className="progress-bar" role="progressbar" aria-label="Example 20px high" style={{ "width": "80%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div className="progress" style={{ "height": "20px", "width": "100%", "margin": "3px 0 12px 0" }}>
+									<div className="progress-bar" role="progressbar" aria-label="Example 20px high" style={{ "width": "75%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div className="progress" style={{ "height": "20px", "width": "100%", "margin": "3px 0 12px 0" }}>
+									<div className="progress-bar" role="progressbar" aria-label="Example 20px high" style={{ "width": "70%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div className="progress" style={{ "height": "20px", "width": "100%", "margin": "3px 0 12px 0" }}>
+									<div className="progress-bar" role="progressbar" aria-label="Example 20px high" style={{ "width": "50%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div className="progress" style={{ "height": "20px", "width": "100%", "margin": "3px 0 12px 0" }}>
+									<div className="progress-bar" role="progressbar" aria-label="Example 20px high" style={{ "width": "75%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+						<a target="_blank" href="https://drive.google.com/file/d/1lAZp_31wI06E3K5WG1779oXDQKIgbRk_/view?usp=sharing" className="btn-form btn btn-outline-primary">Download CV</a>
 					</div>
 				</div>
-			</div>
-
-			<div className="content">
-				<div className="row">
-					<div className="content_left">
-						{
-							owner.mainInfo.map((elem, index) => {
-								return (
-									<div key={index} className="content-card">
-										<h2>{elem.label}</h2>
-										{
-											elem.arrayWithInfo.map((e, i) => {
-												return (
-													<div key={i + 10} className="content-body">
-														<div className="row">
-															<div className="description">
-																<h3>{e.name}</h3>
-																<p>{e.description}</p>
-															</div>
-															<div className="date">
-																<span>{e.timeLine}</span>
-															</div>
-														</div>
-													</div>
-												)
-											})
-										}
-									</div>
-								)
-							})
-						}
-						<div key={9999} className="content-card">
-							<h2>My social networks</h2>
-							<ul>
-								<li><a target="_blank" href="https://t.me/forzeoldgg">Telegram</a></li>
-								<li><a target="_blank" href="https://www.facebook.com/roman.popovych.75">Facebook</a></li>
-								<li><a target="_blank" href="https://www.instagram.com/forzeold/">Instagram</a></li>
-								<li><a target="_blank" href="https://github.com/fotzeold">GitHub</a></li>
-							</ul>
-						</div>
-					</div>
-					<div className="content_right">
-						{
-							owner.secondInfo.map((elem, index) => {
-								return (
-									<div key={index + 10} className="content-card">
-										<h2>{elem.label}</h2>
-										{
-											elem.info.map((e, i) => {
-												return (
-													<div key={i + 100} className="content-body">
-														<div className="description">
-															<h3>{e.name}</h3>
-															<p>{e.description}</p>
-														</div>
-													</div>
-												)
-											})
-										}
-									</div>
-								)
-							})
-						}
-
-						<h2>{owner.someInfo.label}</h2>
-						<p>{owner.someInfo.text}</p>
-					</div>
+				<div className="about__cv">
+					<iframe src="https://drive.google.com/file/d/1lAZp_31wI06E3K5WG1779oXDQKIgbRk_/preview" allow="autoplay"></iframe>
 				</div>
 			</div>
 		</section>
 	)
+
 }
 
 export default About;
