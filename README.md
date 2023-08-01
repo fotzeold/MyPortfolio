@@ -1,8 +1,10 @@
-# Hello, this is my portfolio 
+# Hello, this is my portfolio website 
 
 In the project directory, you can run:
 
 ### `npm start`
+
+![prog4](https://github.com/fotzeold/MyPortfolio/assets/72940847/3894b5e6-d71a-4fba-88a5-0c776b900123)
 
 Education
 Software development
